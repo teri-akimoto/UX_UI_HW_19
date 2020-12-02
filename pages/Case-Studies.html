@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html id="Case-Studies-bg">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoang Lan Nguyen's Portfolio</title>
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<!-- Navigation Bar -->
+<body>
+<nav>
+    <a href="../index.html"><img class='logo' src='../images/logo.svg' alt="My Logo" height='64px'></a>
+    <div class="nav-space"></div>
+    <div class='contact'>
+        <!-- <div class="contact-method"><p>+1 (657) 252 2544</p></div> -->
+        <a href="tel:6572522544">
+            <div class='contact-phone'>
+                <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+        </div></a>
+        <a href="mailto:nguyenhlan96@gmail.com">
+            <div class='contact-email'>
+            <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+        </div>
+        <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+            <div class='contact-linkedin'>
+                <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+        </div></a>
+        <a href="https://dribbble.com/teri_akimoto">
+            <div class='contact-dribbble'>
+            <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+        </div></a>
+        <img id="open-icon" src="../icons/menu-open.svg" width=50px height=50px onclick="openmenu()">
+    </div>
+</nav>
+
+<!-- Full-screen Menu -->
+<ul id="menu" class="overlay-menu">
+    <li id="home-link"><a href="../index.html"><h2>Home</h2></a></li>
+    <li id="about-link"><a href="About.html"><h2>About</h2></a></li>
+    <li id="case-studies-link"><a href="Case-Studies.html"><h2>Case Studies</h2></a></li>
+    <li id="illustrations-link"><a href="#"><h2>Illustrations</h2></a></li>
+    <img id="close-icon" src="../icons/menu-close.svg" width=50px height=50px onclick="closemenu()">
+    <div id="overlay-top" class="overlay-menu">
+        <a href="index.html"><img class='logo' src='../images/logo.svg' height='64px'></a>
+        <div class="nav-space"></div>
+        <div class='contact'>
+            <!-- <div class="contact-method"><p>+1 (657) 252 2544</p></div> -->
+            <a href="tel:6572522544">
+                <div class='contact-phone'>
+                    <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+            </div></a>
+            <a href="mailto:nguyenhlan96@gmail.com">
+                <div class='contact-email'>
+                <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+            </div>
+            <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+                <div class='contact-linkedin'>
+                    <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+            </div></a>
+            <a href="https://dribbble.com/teri_akimoto">
+                <div class='contact-dribbble'>
+                <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+            </div></a>
+            <div id="empty-icon">
+        </div>
+    </div>
+</ul>
+
+    <!-- Case Studies List -->
+    <div id="case-studies-body">
+        <section id="case-studies">
+            <h1>Case Studies</h1>
+            <div id="case-study1" class="wide-card">
+                <a href="Endangered-Species.html" id="card-thumbnail1" class="card-thumbnail"><div></div></a>
+                <div class="wide-card-content">
+                    <h2 class="card-heading">Endangered Species Redesign</h2>
+                    <p class="card-date">Sept 2020 (3 weeks)</p>
+                    <p class="card-description">UX Case Study for government website UI & IA redesign.</p>
+                    <a href="Endangered-Species.html"><div class="button" id="see-more">see more</div></a>
+                </div>
+            </div>
+            <div id= "case-study2" class="wide-card">
+                <a href="#" id="card-thumbnail2" class="card-thumbnail"><div></div></a>
+                <div class="wide-card-content">
+                    <h2 class="card-heading">e<span class="italic">motion</span> Mood Tracker App</h2>
+                    <p class="card-date">Aug 2020 (3 weeks)</p>
+                    <p class="card-description">UX Case Study for minimal input mood tracking and suggestions generator based on selected mood.</p>
+                    <div class="button" id="see-more">see more</div>
+                </div>
+            </div>
+            <div id= "case-study3" class="wide-card">
+                <a href="#" id="card-thumbnail3" class="card-thumbnail"><div></div></a>
+                <div class="wide-card-content">
+                    <h2 class="card-heading">CORAL NPO Redesign</h2>
+                    <p class="card-date">Oct 2020 (3 weeks)</p>
+                    <p class="card-description">UX Case Study for donating, volunteering with and learning ways to live sustainably for a coral saving organization.</p>
+                    <div class="button" id="see-more">see more</div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <h2 id="footer-header">Let's work on solutions together!</h2>
+        <!-- <p>+1 (657) 252 2544</p> -->
+        <div class='contact'>
+            <!-- <div class="contact-method"><p>+1 (657) 252 2544</p></div> -->
+            <a href="tel:6572522544">
+                <div class='contact-phone'>
+                    <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+            </div></a>
+            <a href="mailto:nguyenhlan96@gmail.com">
+                <div class='contact-email'>
+                <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+            </div>
+            <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+                <div class='contact-linkedin'>
+                    <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+            </div></a>
+            <a href="https://dribbble.com/teri_akimoto">
+                <div class='contact-dribbble'>
+                <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+            </div></a>
+            <!-- <a href="https://www.instagram.com/teri_akimoto.art/"><div class='contact-instagram'><img src='icons/et-openmoji_instagram.svg' alt="instagram" title="Instagram: teri_akimoto.art" sizes='32px 32px'></div></a> -->
+        </div>
+        <p>© Hoang Lan Nguyen 2020</p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="JavaScript/index.js"></script>
+<script>
+    var menu = document.getElementById("menu");
+    function openmenu(){
+        menu.style.top="0";
+    }
+    
+    function closemenu(){
+      menu.style.top = "-200vh";
+    }
+</script>
+</body>
+
+
+</html>

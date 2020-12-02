@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html id="About-bg">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoang Lan Nguyen's Portfolio</title>
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<!-- Navigation Bar -->
+<body>
+<nav>
+    <a href="../index.html"><img class='logo' src='../images/logo.svg' alt="My Logo" height='64px'></a>
+    <div class="nav-space"></div>
+    <div class='contact'>
+        <!-- <div class="contact-method"><p>+1 (657) 252 2544</p></div> -->
+        <a href="tel:6572522544">
+            <div class='contact-phone'>
+                <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+            </div>
+        </a>
+        <a href="mailto:nguyenhlan96@gmail.com">
+            <div class='contact-email'>
+            <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+            <div class='contact-linkedin'>
+                <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+            </div>
+        </a>
+        <a href="https://dribbble.com/teri_akimoto">
+            <div class='contact-dribbble'>
+            <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+         </div>
+        </a>
+        <img id="open-icon" src="../icons/menu-open.svg" width=50px height=50px onclick="openmenu()">
+    </div>
+</nav>
+
+<!-- Side Navigation -->
+<a href="https://docs.google.com/document/d/1R8a_nDnK4jU8saWUVK28aqBOZMNTjU0s1rTNltGXnoY/edit?usp=sharing">
+    <div id="see-resume" class="primary-button">see resume</div>
+</a>
+<div class="side-menu about-side">
+    <a id="summary-tab" class="side-tab" href="#about-me-body" data-offset="80"><div>
+        <img id="tab1" src="../icons/side-tab1.svg" alt="Summary"></div>
+        <p class="side">Summary</p>
+    </a>
+    <a id="ux-skills-tab" class="side-tab" href="#my-skills-body" data-offset="80"><div>
+        <img id="tab2" src="../icons/side-tab2.svg" alt="My UX Skills"></div>
+        <p class="side">My UX<br>Skills</p>
+    </a>
+    <a id="tool-set-tab" class="side-tab" href="#tool-set-body" data-offset="80"><div>
+        <img id="tab3" src="../icons/side-tab3.svg" alt="Tool Set"></div>
+        <p class="side">Tool Set</p>
+    </a>
+    <img class="side-menu-icon" id="side-close" src="../icons/side-menu-icon.svg" width=30px>
+</div>
+
+<!-- Full-screen Menu -->
+    <ul id="menu" class="overlay-menu">
+        <li id="home-link"><a href="../index.html"><h2>Home</h2></a></li>
+        <li id="about-link"><a href="About.html"><h2>About</h2></a></li>
+        <li id="case-studies-link"><a href="Case-Studies.html"><h2>Case Studies</h2></a></li>
+        <li id="illustrations-link"><a href="#"><h2>Illustrations</h2></a></li>
+        <img id="close-icon" src="../icons/menu-close.svg" width=50px height=50px onclick="closemenu()">
+        <div id="overlay-top" class="overlay-menu">
+            <a href="index.html"><img class='logo' src='../images/logo.svg' height='64px'></a>
+            <div class="nav-space"></div>
+            <div class='contact'>
+                <!-- <div class="contact-method"><p>+1 (657) 252 2544</p></div> -->
+                <a href="tel:6572522544">
+                    <div class='contact-phone'>
+                        <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+                </div></a>
+                <a href="mailto:nguyenhlan96@gmail.com">
+                    <div class='contact-email'>
+                    <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+                </div>
+                <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+                    <div class='contact-linkedin'>
+                        <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+                </div></a>
+                <a href="https://dribbble.com/teri_akimoto">
+                    <div class='contact-dribbble'>
+                    <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+                </div></a>
+                <div id="empty-icon">
+            </div>
+        </div>
+    </ul>
+
+    <!-- About Me Description -->
+<div id="about-me-body">
+<section id="about-me">
+    <h1>About</h1>
+    <img src="../images/my-profile-image.jpg" width="220px" alt="My profile photo">
+    <section class='about-me'>
+        <h2 class='greeting'>Nice to meet you! <wbr>I am Lan—</h2></h2>
+        <p>A keen interest in the UI branding and language used to communicate with the users, and attention to detail in micro-interactions. The user’s experience can be truly delightful when these elements are considered, as demonstrated in the <a class="hyperlink" href="Endangered-Species.html">Endangered Species Redesign</a>.</p>
+        <p>Also dabble in watercolour in free time as "Teri Akimoto" and love to apply both the medium’s subtlety and vibrancy in my design. A selection can be found in Illustrations.</p>
+    </section>
+</section>
+</div>
+<!-- My UX Skills -->
+<div id="my-skills-body">
+<section id="my-skills">
+    <h2>My UX Skills</h2>
+    <div id="ux-skill1" class="ux-skill">
+        <img class="ux-skill-image" src="../images/ux-skill1.svg">
+        <p>Framing a specific problem helps me jumpstart into testing. Thorough research into the user’s experience with competitors’ solutions has helped us to identify their weaknesses that we can explore and build upon.</p>
+    </div>
+    <div id="ux-skill2" class="ux-skill">
+        <img class="ux-skill-image" src="../images/ux-skill2.svg">
+        <div class="paragraphs">
+            <p>Current pain points and user demographics help inform me on who my users are and what they need.</p>
+            <p>User personas, problem statements and story boards are my go-to tools for user empathy.</p>
+        </div>
+    </div>
+    <div id="ux-skill3" class="ux-skill">
+        <img class="ux-skill-image" src="../images/ux-skill3.svg">
+        <div class="paragraphs">
+        <p>Current pain points and user demographics help inform me on who my users are and what they need.</p>
+        <p>User personas, problem statements and story boards are my go-to tools for user empathy.</p>
+        </div>
+    </div>
+</section>
+</div>
+<!-- Tool Set -->
+<div id="tool-set-body">
+<section id="tool-set">
+    <h2>Tool Set</h2>
+    <div class="tool-row">
+        <div id="pen-paper" class="tool-tile"></div>
+        <div id="figma" class="tool-tile"></div>
+        <div id="invision" class="tool-tile"></div>
+    </div>
+    <div class="tool-row">
+        <div id="miro" class="tool-tile"></div>
+        <div id="google-drive" class="tool-tile"></div>
+        <div id="photoshop" class="tool-tile"></div>
+    </div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <h2 id="footer-header">Let's work on solutions together!</h2>
+        <!-- <p>+1 (657) 252 2544</p> -->
+        <div class='contact'>
+            <!-- <div class="contact-method"><p>+1 (657) 252 2544</p></div> -->
+            <a href="tel:6572522544">
+                <div class='contact-phone'>
+                    <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+            </div></a>
+            <a href="mailto:nguyenhlan96@gmail.com">
+                <div class='contact-email'>
+                <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+            </div>
+            <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+                <div class='contact-linkedin'>
+                    <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+            </div></a>
+            <a href="https://dribbble.com/teri_akimoto">
+                <div class='contact-dribbble'>
+                <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+            </div></a>
+            <!-- <a href="https://www.instagram.com/teri_akimoto.art/"><div class='contact-instagram'><img src='icons/et-openmoji_instagram.svg' alt="instagram" title="Instagram: teri_akimoto.art" sizes='32px 32px'></div></a> -->
+        </div>
+        <p>© Hoang Lan Nguyen 2020</p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../JavaScript/About.js"></script>
+<script>
+    var menu = document.getElementById("menu");
+    function openmenu(){
+        menu.style.top="0";
+    }
+    
+    function closemenu(){
+      menu.style.top = "-200vh";
+    }
+</script>
+</body>
+
+
+</html>

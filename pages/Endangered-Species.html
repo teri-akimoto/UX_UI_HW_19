@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html id="Endangered-Species-bg">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoang Lan Nguyen's Portfolio</title>
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<!-- =======================================
+Header
+======================================= -->
+<body>
+<nav>
+    <a href="../index.html"><img class='logo' src='../images/logo.svg' alt="My Logo" height='64px'></a>
+    <div class="nav-space"></div>
+    <div class='contact'>
+        <a href="tel:6572522544">
+            <div class='contact-phone'>
+                <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+        </div></a>
+        <a href="mailto:nguyenhlan96@gmail.com">
+            <div class='contact-email'>
+            <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+        </div>
+        <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+            <div class='contact-linkedin'>
+                <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+        </div></a>
+        <a href="https://dribbble.com/teri_akimoto">
+            <div class='contact-dribbble'>
+            <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+        </div></a>
+        <img id="open-icon" src="../icons/menu-open.svg" width=50px height=50px onclick="openmenu()">
+    </div>
+</nav>
+
+<!-- =======================================
+Full Screen Menu
+======================================= -->
+<ul id="menu" class="overlay-menu">
+    <li id="home-link"><a href="../index.html"><h2>Home</h2></a></li>
+    <li id="about-link"><a href="About.html"><h2>About</h2></a></li>
+    <li id="case-studies-link"><a href="Case-Studies.html"><h2>Case Studies</h2></a></li>
+    <li id="illustrations-link"><a href="#"><h2>Illustrations</h2></a></li>
+    <img id="close-icon" src="../icons/menu-close.svg" width=50px height=50px onclick="closemenu()">
+    <div id="overlay-top" class="overlay-menu">
+        <a href="index.html"><img class='logo' src='../images/logo.svg' height='64px'></a>
+        <div class="nav-space"></div>
+        <div class='contact'>
+            <!-- <div class="contact-method"><p>+1 (657) 252 2544</p></div> -->
+            <a href="tel:6572522544">
+                <div class='contact-phone'>
+                    <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+            </div></a>
+            <a href="mailto:nguyenhlan96@gmail.com">
+                <div class='contact-email'>
+                <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+            </div>
+            <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+                <div class='contact-linkedin'>
+                    <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+            </div></a>
+            <a href="https://dribbble.com/teri_akimoto">
+                <div class='contact-dribbble'>
+                <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+            </div></a>
+            <div id="empty-icon">
+        </div>
+    </div>
+</ul>
+
+<!-- =======================================
+Side Nav
+======================================= -->
+<div class="side-case-menu endangered-side">
+    <a id="summary-tab" class="side-tab" href="#summary-body" data-offset="80"><div id="summary-tab" class="side-tab">
+        <img id="tab1" src="../icons/side-tab1.svg" alt="Summary">
+        <p class="side">Summary</p>
+    </div>
+    <a id="ux-research-tab" class="side-tab" href="#ux-research-body" data-offset="80"><div>
+        <img id="tab2" src="../icons/side-tab2.svg" alt="User Research">
+        <p class="side">User<br>Research</p>
+    </div></a>
+    <a id="definition-tab" class="side-tab" href="#definition-body" data-offset="80"><div>
+        <img id="tab3" src="../icons/side-tab3.svg" alt="Definition & Ideation">
+        <p class="side">Definition<br>& Ideation</p>
+    </div></a>
+    <a id="prototyping-tab" class="side-tab" href="#prototyping-body" data-offset="80"><div>
+        <img id="tab4" src="../icons/side-tab4.svg" alt="Prototyping & Testing">
+        <p class="side">Prototyping<br>& Testing</p>
+    </div></a>
+    <a id="final-tab" class="side-tab" href="#final-body" data-offset="80"><div>
+        <img id="tab5" src="../icons/side-tab5.svg" alt="Final Product">
+        <p class="side">Final<br>Product</p>
+    </div></a>
+    <a id="reflection-tab" class="side-tab" href="#reflection-body" data-offset="80">
+        <div>
+        <img id="tab6" src="../icons/side-tab6.svg" alt="Reflection">
+        <p class="side">Reflection</p>
+    </div></a>
+    <img class="side-menu-icon" id="side-close" src="../icons/side-menu-icon.svg" width=30px>
+</div>
+
+<!-- =======================================
+Hero title
+======================================= -->
+<div class="endangered-body">
+    <h1>Endangered Species Redesign</h1>
+    <section class="case-hero">
+        <div class="case-img1"></div>
+    </section>
+</div>
+
+<!-- =======================================
+Summary
+======================================= -->
+<div id="summary-body" class="summary-body">
+    <section class="summary">
+        <div class="over-column1">
+            <h2>Problem</h2>
+            <p>The government website shows <span class="bold">inconsistencies</span> in UI design and a <span class="bold">confusing</span> use of multiple search bars which <span class="bold">undersells</span> its amazing database on all endangered species in the US and abroad.</p>
+            <br>
+            <h2>Solution</h2>
+            <p>Bring out the <span class="bold">best key features</span> of this website:
+            <ul class=".ulist">
+                <li>a unified search engine;</li>
+                <li>"Search Species in Your Area" user flow;</li>
+                <li>ability to save visual information for later use in the field.</li>
+            </ul></p>
+        </div>
+        <div class="over-column2">
+            <h2>Team</h2>
+            <p>Team members: Jerry Vu, Ricky Liu, Hoang Lan Nguyen</p>
+            <p>My role: UX research, IA & Site remapping, user testing, UI design, high-fidelity protototyping</p>
+            <br>
+            <h2>Tools</h2>
+            <p>Figma, Miro, inVision, Google Drive, Zoom, Discord</p>
+        </div>
+    </section>
+</div>
+<!-- =======================================
+User Research
+======================================= -->
+<div class="case-p-body" id="ux-research-body">
+    <section class="case-p-section">
+        <div class="case-p">
+        <h2>User Research</h2>
+        <p>Although our user persona wasn’t based on prior user research or official website demographics, 
+            our user was essential to find out <span class="bold">what he would do on the website</span> 
+            and what would <span class="bold">motivate</span> him to visit it in the first place. So who’s our user? 
+            <br>
+            Michael is a carpenter from Mariposa County, California. He loves nature, especially camping/hiking 
+            with his wife and dog. He wants to find out what potentially threatened species live in his area so he can 
+            <span class="bold">hike/camp responsibly</span>.
+            <br>
+            How can he distinguish what species to look out for and avoid?
+        </p></div>
+        <a href="#img-id"><div class="click-image">
+            <img src="../images/Endangered/endangered-species-proto-persona.jpg" width="600px" title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
+            <div class="expand-icon"></div>
+        </div></a>
+        <a href="#_" id="img-id" class="click-overlay proto-persona-img"><div>
+            <img src="../images/Endangered/endangered-species-proto-persona.jpg" width="600px" title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
+            <div class="shrink-icon"></div>
+        </div></a>
+    </section>
+</div>
+<div class="case-p-body">
+    <section class="case-p-section">
+        <div class="case-p">
+        <h2>Task Analysis</h2>
+        <p>We identified a user flow for <span class="bold">how Michael would use the current website
+            </span> and conducted heuristic evaluation for the key features he'd interact with to achieve his goal 
+            (use the slide deck to see heuristic evaluation for each page).
+        </p></div>
+        <a href="#img-id1"><div class="click-image">
+            <img src="../images/Endangered/endangered-species-user-path.png" width="600px" title="current user path" alt="current user path">
+            <div class="expand-icon"></div>
+            <div class="image-description">
+                <p>Our user’s journey on the current website.</p>
+                <div class="bullet-row">
+                    <div class="active-bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                </div>
+            </div>
+        </div></a>
+        <a href="#_" id="img-id1" class="click-overlay user-path-img"><div>
+            <img src="../images/Endangered/endangered-species-user-path.png" width="600px" title="current user path" alt="current user path">
+            <div class="expand-icon"></div>
+            <div class="image-description">
+                <p>Our user’s journey on the current website.</p>
+                <div class="bullet-row">
+                    <div class="active-bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                </div>
+            </div>
+        </div></a>
+    </section>
+</div>
+<div class="case-p-body">
+    <section class="case-p-section">
+        <div class="case-p">
+            <p>We then conducted a usability test on 5 users to identify current pain points and organized the findings using the prioritization matrix (use the slide deck to see test notes).
+            <br>
+            Interesting insights include:
+        <ul class=".ulist">
+            <li>Users want a <span class="bold">visually appealing</span> website that presents information in a 
+                <span class="bold">clear hierarchy</span> and order.</li>
+            <li>Navigation throughout the website is <span class="bold">inconsistent</span> and unclear, <span class="bold">difficult</span> to use.</li>
+        </ul></p></div>
+        <a><div class="click-image">
+            <img src="../images/Endangered/endangered-species-prioritization-matrix.jpg" width="600px" title="findings prioritization matrix" alt="findings prioritization matrix">
+            <div class="expand-icon"></div>
+            <div class="image-description">
+                <p>Prioritization of the user and the agency.</p>
+                <div class="bullet-row">
+                    <div class="active-bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                    <div class="bullet"></div>
+                </div>
+            </div>
+        </div></a>
+    </section>
+</div>
+<!-- =======================================
+Problem statement
+======================================= -->
+<div class="case-p-body problem-statement">
+    <p class="problem bold state">How might we help redesign the website so that users can
+        successfully search for species in their area through navigation or search
+        and able to save visual information for later use?</p>
+    <div class="quotation-start"></div>
+    <div class="quotation-end"></div>
+</div>
+
+<!-- =======================================
+Definition & Ideation
+======================================= -->
+<div class="case-p-body" id="definition-body">
+    <section class="case-p-section">
+        <div class="case-p"><h2>Definition & Ideation</h2>
+        <p>We identified a user flow for <span class="bold">how Michael would use the current website
+        </span> and conducted heuristic evaluation for the key features he'd interact with to achieve his goal 
+        (use the slide deck to see heuristic evaluation for each page).
+        </p></div>
+        <a><div class="click-image">
+            <img class ="site-map-snip" src="../images/Endangered/endangered-species-site-map-current-snip.jpg" title="current site map" alt="current site map">
+            <div class="expand-icon"></div>
+            <div class="image-description">
+                <p>What the current site map looks like.</p>
+                <div class="bullet-row">
+                    <div class="active-bullet"></div>
+                    <div class="bullet"></div>
+                </div>
+            </div>
+        </div></a>
+    </section>
+</div>
+<div class="case-p-body">
+    <section class="case-p-section">
+        <div class="case-p"><p>This “journey” for the most part lies in the 3 following categories out of 7:
+        <ul class=".ulist">
+            <li>Species Search;</li>
+            <li>Endangered Species Bulletin;</li>
+            <li>Conservation Process.</li>
+        </ul></p></div>
+        <a><div class="click-image">
+            <img src="../images/Endangered/endangered-species-site-map.png" width="600px" title="new site map" alt="new site map">
+            <div class="expand-icon"></div>
+        </div></a>
+    </section>
+</div>
+
+<!-- =======================================
+Prototping & Testing
+======================================= -->
+<div class="case-p-body" id="prototyping-body">
+    <section class="case-p-section">
+        <div class="case-p"><h2>Prototyping & Testing</h2>
+            <p>Adaptive design required <span class="bold">desktop</span> and 
+                <span class="bold">mobile</span> view tests. 
+                <br>
+                UI style guide was used for the 5-second test to see how well 
+                the direction of the redesign fits with the agency and users’ perception of it.
+                <br>
+                The lo-fi prototypes envisioned a scientific, data-driven feel. 
+                However, I looked back on <span class="bold">nature-related</span> website designs 
+                and got inspired by the <span class="bold">park rangers' uniforms</span> for the UI style guide.
+            </p>
+        </div>
+        <a><div class="click-image">
+                <img src="../images/Endangered/endangered-species-ui-style-tile.png" 
+                width="600px" title="new UI style tile" alt="new UI style tile">
+                <div class="expand-icon"></div>
+                <div class="image-description">
+                    <p>UI style tile</p>
+                    <div class="bullet-row">
+                        <div class="active-bullet"></div>
+                        <div class="bullet"></div>
+                        <div class="bullet"></div>
+                        <div class="bullet"></div>
+                        <div class="bullet"></div>
+                        <div class="bullet"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+</div>
+<!-- Prototyping : Navigation changes -->
+<div class="case-p-body">
+    <section class="case-p-section">
+        <div class="case-p"><h2>Navigation Changes</h2>
+            <p>Research shows that the navigation requires a more cohesive, intuitive layout:
+                <ol>
+                    <li>The header is significantly reduced in height to focus on the page content. 
+                        Breadcrumbs are now included.</li>
+                    <li>Based on previous UI research, a single search bar is favoured throughout 
+                        (<a href="https://www.beacontechnologies.com/blog/2010/09/multiple-search-boxes.aspx" target="_blank">Beacon News</a>, 2010). 
+                        Michael can refine his search results after a search is made. All search suggestions appear during his keyword input for a quicker search.</li>
+                    <li>The redundant site map is removed from the footer to <span class="bold">focus on relevant information</span> 
+                        (Contact Us) and links to statements required by law.</li>
+                </ol>
+            </p>
+        </div>
+        <div class="image-column">
+            <a><div class="gif beta-header">
+            <img src="../images/Endangered/UI Interactions/desktop beta header.gif" width="600px" title="beta header UI" alt="beat header UI">
+            </div></a>
+            <a><div class="static-image ">
+                <img src="../images/Endangered/UI Interactions/beta footer.png" width="600px" title="beta footer" alt="beat footer">
+            </div></a>
+        </div>
+    </section>
+</div>
+<!-- Prototyping : Homepage Test -->
+<div class="case-p-body">
+    <section class="case-p-section">
+        <div class="case-p">
+            <h2>Homepage Test</h2>
+            <p>5-second tests were conducted for the homepage of the stylized prototype. 
+                The findings from 3 user tests <span class="bold">validate</span> the proposed UI design in the following ways:
+                <ol>
+                    <li>The color palette successfully reflects the <span class="bold">"nature"</span>, 
+                        <span class="bold">"earth"</span>, <span class="bold">"animals"</span> that users associate with the agency.</li>
+                    <li>Clear layout, information hierarchy & navigation.</li>
+                    <li>Biggest impact words - <span class="bold">"Endangered Species"</span>, 
+                        <span class="bold">"Wildlife"</span>, <span class="bold">"News"</span>.</li>
+                </ol>
+            </p>
+        </div>
+        <a><div class="click-image">
+            <img src="../images/Endangered/endangered-species-user-path.png" 
+            width="600px" title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
+            <div class="expand-icon"></div>
+        </div></a>
+    </section>
+</div>
+<!-- Prototyping : Changes to UI -->
+<div class="case-p-body">
+    <section class="case-p-section">
+        <div class="case-p"><h2>Changes to UI</h2>
+            <p>The findings led to small but impactful adjustments for a better experience:
+                <ul class=".ulist">
+                    <li>The <span class="bold">spacing</span> in the header navigation tabs and article cards was fixed for better alignment.
+                    <li>The pictures occupy more space to give the <span class="bold">visual focus</span>.
+                    <li><span class="bold">3 key calls to action</span> and home are kept on desktop & tablet view. 
+                        All other tabs are hidden in the hamburger menu.</li>
+                    <li>The footer is reduced in height to make the external links more visible and reduce scrolling.</li>
+                    <li>The external links are <span class="bold">colour corrected</span> for greater accessibility.</li>
+                    <li>Incorporation of <span class="bold">mobile UI elements on the home page</span>, including breadcrumb removal, 
+                        screen-wide hero image carousel on the home page.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="image-column">
+            <a><div class="gif">
+                <img src="../images/Endangered/UI Interactions/header change.gif" 
+                width="600px" title="focus on calls to action" alt="header has focus on calls to action">
+            </div></a>
+            <a><div class="gif colour-footer">
+                <img src="../images/Endangered/UI Interactions/footer change.gif" 
+                width="600px" title="colour corrected footer" alt="colour corrected footer">
+            </div></a>
+            <a><div class="gif homepage-UI">
+                <img src="../images/Endangered/UI Interactions/hero change.gif" 
+                width="600px" title="more mobile UI elements" alt="homepage has more mobile UI elements">
+            </div></a>
+        </div>
+    </section>
+</div>
+<!-- Prototyping : Mobile Usability -->
+<div class="case-p-body">
+    <section class="case-p-section">
+        <div class="case-p">
+            <h2>Mobile Usability</h2>
+            <p>Our task was to produce adaptive redesign (desktop > mobile). 
+                We found that to achieve this, you still need to reiterate desktop to 
+                better reflect mobile view. As a result further changes took place:
+                <ol>
+                    <li>Static secondary navigation is replaced with a hamburger button to <span class="bold">prioritize content</span> 
+                        on an individual page and keep the UI <span class="bold">consistent across devices</span>. 
+                        A written prompt is given to discover the hamburger menu on search profile pages.</li>
+                    <li>The hamburger icon and the 4 tabs are <span class="bold">combined</span> when the width 
+                        is smaller than tablet view (use the slide deck to see the snap points).</li>
+                    <li>The breadcrumbs are reduced to the previous and current level of the site map to fit the mobile screen.</li>
+                </ol>
+            </p>
+        </div>
+        <div class="image-column">
+            <a><div class="gif navigation-levels">
+                <img src="../images/Endangered/UI Interactions/desktop secondary to primary navigation.gif" 
+                width="600px" title="secondary to primary navigation" alt="secondary to primary navigation">
+                </div></a>
+            <a><div class="gif responsive-screens">
+                <img src="../images/Endangered/UI Interactions/responsive design change.gif" 
+                width="600px" title="responsive design" alt="responsive design (desktop/mobile/tablet)">
+                </div></a>
+        </div>
+    </section>
+</div>
+<!-- Prototyping : Mobile Tests -->
+<div class="case-p-body">
+    <section class="case-p-section">
+        <div class="case-p"><h2>Mobile Tests</h2>
+        <p>Based on Michael’s user path to search local endangered species in his area, 
+            5 user tests were conducted on the mobile version. It was important to see 
+            <span class="bold">how well the navigation worked in mobile view</span>.
+            <br>
+            The performance indicators show that mobile prototype 1 required work in
+        </p></div>
+        <a><div class="statistics click-image">
+        <img src="../images/Endangered/KPIs.svg" 
+        width="600px" title="key performance indicators" alt="key performance indicators">
+        </div></a>
+    </section>
+</div>
+<div class="x-ol-body">
+    <section class="x-ol-list">
+        <ol class="x-ol">
+            <li class="x1">
+                <div>Information hierarchy in search results.
+                <!-- <br><br><br> -->
+                <img class="imgx" src="../images/Endangered/UI Interactions/work on search results IA.png"
+                width="300px" title="search results need hierarchy" alt="search results need hierarchy">
+                </div>
+            </li>
+            <li class="x2">
+                <div>Easy to access home button outside of the hamburger menu.
+                <!-- <br><br> -->
+                <img class="imgx" src="../images/Endangered/UI Interactions/work on home button and image hotspot.png"
+                width="300px" title="home button access" alt="home button access">
+                </div>
+            </li>
+            <li class="x3">
+                <div>Bigger full view image hotspot and relevance to the species.
+                <img class="imgx" src="../images/Endangered/UI Interactions/work on home button and image hotspot.png"
+                width="300px" title="bigger image hotspot" alt="bigger image hotspot">
+                </div>
+            </li>
+        </ol>
+</div>
+<!-- =======================================
+Final product
+======================================= -->
+<div class="case-p-body" id="final-body">
+        <div class="wide-case-p"><h2>Final Product</h2>
+        <p class="centered">Our goal was to make the website as user-friendly as possible when using its species search feature and saving visual information for later use. 
+            You can switch between the user’s desktop and mobile journey.
+        </p></div>
+</div>
+<div class="case-p-body">
+    <section class="final-p-section input-county">
+        <div class="case-p"><p>Michael starts inputting his county into the <span class="bold">search bar</span>.
+        Search <span class="bold">suggestions</span> show a "pin" which indicates a specific location.
+        He can also tap a specific profile "Mariposa Lily" or search everything by the keyword.
+        <br>
+        Once he taps the "pin", he's given a number of results for <span class="bold">species profiles in his area</span>.
+        </p></div>
+        <div class="demo-frame">
+            <img class="demo MichaelSearches" src="../images/Endangered/UI Interactions/mobile v2 search.gif"
+                width="300px" title="Michael searches in his area" alt="Michael searches in his area">
+            <div class="final-toggle">
+                <div class="desktop-icon desktop-disabled"></div>
+                <div class="mobile-icon mobile-active"></div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="case-p-body">
+    <section class="final-p-section-mirror refine-search">
+        <div class="demo-frame-mirror">
+            <img class="demo MichaelRefines" src="../images/Endangered/UI Interactions/mobile v2 refine.gif"
+                width="300px" title="Michael hones down to mammals" alt="Michael hones down to mammals">
+            <div class="final-toggle">
+                <div class="desktop-icon desktop-disabled"></div>
+                <div class="mobile-icon mobile-active"></div>
+            </div>
+        </div>
+        <div class="case-p-mirror">
+            <p>Hm, Michael wants to refine his results to show only mammals since they are easier to spot. 
+            The San Joaquin Kit Fox seems like a large enough mammal to find..
+        </p></div>
+    </section>
+</div>
+<div class="case-p-body">
+        <p class="centered center-state">Michael can <span class="bold">swipe</span> through the images to get a better look of the fox.
+        The images include a short <span class="bold">description</span> of the species. There are 2 ways he can save the visual information:</p>
+</div>
+<ol class="double-p-body alphabetical">
+    <li class="x1-2">
+        <div>
+            Tap the download button to quickly save on his device.
+            <div class="demo-frame-1-2">
+                <img class="MichaelDownloads" src="../images/Endangered/UI Interactions/mobile v2 download.gif"
+                width="300px" title="Michael taps the download button" alt="Michael taps the download button">
+            </div>
+        </div>
+    </li>
+    <li class="x2-2">
+        <div>
+            Open full view and save the image <span class="bold">manually.</span>
+            <div class="demo-frame-2-2">
+                <img class="MichaelSaves" src="../images/Endangered/UI Interactions/mobile v2 save.gif"
+                width="300px" title="Michael saves manually" alt="Michael saves manually">
+            </div>
+        </div>
+    </li>
+</ol>
+<div class="final-toggle">
+    <div class="desktop-icon desktop-disabled"></div>
+    <div class="mobile-icon mobile-active"></div>
+</div>
+
+<!-- =======================================
+Reflection
+======================================= -->
+<div class="summary-body" id="reflection-body">
+    <section class="summary">
+        <div class="over-column1">
+            <h2>Reflection</h2>
+            <p>The <span class="bold">UI direction</span> and <span class="bold">style guide</span> 
+                that aligns with a “brand”, or, in this case, a government agency, were key to bringing the design together into a 
+                <span class="bold">cohesive user experience</span>.
+            <br>
+            Adaptive, or desktop-first, design had its benefits of <span class="bold">greater creativity in navigation</span>. 
+            However, the on-going process of prototyping & testing reveal a <span class="bold">mutual dependence of desktop and mobile views</span>.
+            </p>
+        </div>
+        <div class="over-column2">
+            <h2>Next Steps</h2>
+            <ul class=".ulist">
+                <li>A-B testing for the inclusion and layout of <span class="bold">filter items</span>;</li>
+                <li>A <span class="bold">landowners' portal</span> for all the easy-to-find and -use tools in the Resources tab.</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<!-- =======================================
+See other studies
+======================================= -->
+<div class="other-studies-body">
+    <section class="other-studies case-p-section">
+        <div class="other-studies-h2">
+            <h2>See Other Studies</h2>
+        </div>
+        <div id= "other-study1" class="narrow-card">
+            <div id="card-thumbnail2" class="ncard-thumbnail"></div>
+            <div class="narrow-card-content">
+                <h2 class="card-heading">e<span class="italic">motion</span> Mood Tracker App</h2>
+                <p class="card-date">Aug 2020 (3 weeks)</p>
+                <p class="card-description">UX Case Study for minimal input mood tracking and suggestions generator based on selected mood.</p>
+                <div class="button" id="see-more">see more</div>
+            </div>
+        </div>
+        <div id= "other-study2" class="narrow-card">
+            <div id="card-thumbnail3" class="ncard-thumbnail"></div>
+            <div class="narrow-card-content">
+                <h2 class="card-heading">CORAL NPO Redesign</h2>
+                <p class="card-date">Oct 2020 (3 weeks)</p>
+                <p class="card-description">UX Case Study for donating, volunteering with and learning ways to live sustainably for a coral saving organization.</p>
+                <div class="button" id="see-more">see more</div>
+            </div>
+    </section>
+</div>
+
+<!-- =======================================
+Footer
+======================================= -->
+<footer>
+    <div class="footer-content">
+        <h2 id="footer-header">Let's work on solutions together!</h2>
+        <!-- <p>+1 (657) 252 2544</p> -->
+        <div class='contact'>
+            <!-- <div class="contact-method"><p>+1 (657) 252 2544</p></div> -->
+            <a href="tel:6572522544">
+                <div class='contact-phone'>
+                    <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+            </div></a>
+            <a href="mailto:nguyenhlan96@gmail.com">
+                <div class='contact-email'>
+                <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+            </div>
+            <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+                <div class='contact-linkedin'>
+                    <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+            </div></a>
+            <a href="https://dribbble.com/teri_akimoto">
+                <div class='contact-dribbble'>
+                <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+            </div></a>
+            <!-- <a href="https://www.instagram.com/teri_akimoto.art/"><div class='contact-instagram'><img src='icons/et-openmoji_instagram.svg' alt="instagram" title="Instagram: teri_akimoto.art" sizes='32px 32px'></div></a> -->
+        </div>
+        <p>© Hoang Lan Nguyen 2020</p>
+    </div>
+</footer>
+
+<!-- =======================================
+Javascript
+======================================= -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../JavaScript/Endangered-Species.js"></script>
+<script>
+    var menu = document.getElementById("menu");
+    function openmenu(){
+        menu.style.top="0";
+    }
+    
+    function closemenu(){
+      menu.style.top = "-200vh";
+    }
+</script>
+</body>
+
+
+</html>
