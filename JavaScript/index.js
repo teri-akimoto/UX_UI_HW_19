@@ -14,16 +14,16 @@ $(".russian-disabled, .russian").click(function() {
 })
 
 $(".english-disabled, .english").click(function() {
-        console.log("english");
-        $(".greeting").text("Hello, my name is Lan.");
-        $("#statement").text("Designer & illustrator.");
-        $("#end-statement").text("Trilingual with education and psychology background.");
-        $(this).addClass("english");
-        $(this).removeClass("english-disabled");
-        $(".vietnam, .vietnam-disabled").addClass("vietnam-disabled");
-        $(".vietnam, .vietnam-disabled").removeClass("vietnam");
-        $(".russian, .russian-disabled").addClass("russian-disabled");
-        $(".russian, .russian-disabled").removeClass("russian");
+    console.log("english");
+    $(".greeting").text("Hello, my name is Lan.");
+    $("#statement").text("Designer & illustrator.");
+    $("#end-statement").text("Trilingual with education and psychology background.");
+    $(this).addClass("english");
+    $(this).removeClass("english-disabled");
+    $(".vietnam, .vietnam-disabled").addClass("vietnam-disabled");
+    $(".vietnam, .vietnam-disabled").removeClass("vietnam");
+    $(".russian, .russian-disabled").addClass("russian-disabled");
+    $(".russian, .russian-disabled").removeClass("russian");
 })
 
 $(".vietnam-disabled, .vietnam").click(function() {
