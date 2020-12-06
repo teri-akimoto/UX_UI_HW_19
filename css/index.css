@@ -267,13 +267,13 @@ HOME PAGE
 .wide-card {
     backdrop-filter: blur(20px);
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 20px;
     padding: 40px 0;
 }
 .wide-card-content {
-    grid-column: -2 / -6;
+    grid-column: 2 / -1;
     grid-row: 1 / -1;
     display: flex;
     flex-direction: column;
@@ -285,7 +285,7 @@ HOME PAGE
     text-decoration: none;
 }
 .card-thumbnail {
-    grid-column: 2 / 8;
+    grid-column: 1 / 2;
     grid-row: 1 / -1;
     overflow: hidden;
     display: flex;
@@ -294,7 +294,7 @@ HOME PAGE
     flex-direction: row;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    cursor:pointer;
+    cursor: pointer;
 }
 #card-thumbnail1 {
     background-image: url(../images/Endangered/endangered\ species\ all\ devices\ cover.png);
@@ -312,7 +312,7 @@ HOME PAGE
     font-style: italic;
 }
 .card-date {
-    color: black;
+    color: #666666;
 }
 #case-study1, #case-study3 {
     background-color: rgba(241, 214, 219, 0.25);
@@ -339,8 +339,12 @@ footer {
     align-items: center;
     grid-column: 4 / span 6;
 }
-#footer-header, .footer-content p {
+#footer-header {
     text-align: center;
+}
+.footer-content p {
+    text-align: center;
+    margin-block-start: 1em;
 }
 /* =======================================
 STYLING
@@ -354,7 +358,6 @@ STYLING
     height: 32px;
 }
 .contact a:hover {
-    /* background-color: rgb(241, 214, 219); */
     border: 100px;
     background-image: url(../icons/icon-background-hover.svg);
     background-repeat: no-repeat;
@@ -400,7 +403,7 @@ STYLING
     font-size: 24px;
     font-style: none;
     color: white;
-    font-weight: 600; /*semi-bold*/
+    font-weight: 600;
     cursor: pointer;
 }
 .primary-button:hover {
@@ -437,6 +440,7 @@ STYLING
 }
 /* Typography */
 p {
+    margin-block-start: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
 }
@@ -448,6 +452,7 @@ p {
     flex-direction: column;
 }
 h1, h2 {
+    margin-block-start: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -457,6 +462,12 @@ h1 {
 }
 h2 {
     font-size: 36px;
+}
+h3 {
+    margin-block-start: 0;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
 }
 .italic {
     font-style: italic;
@@ -528,7 +539,6 @@ ABOUT
     min-height: auto;
     width: calc(100% / 12 + 40px);
     display: flex;
-    /* overflow-x: auto; */
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -552,6 +562,7 @@ ABOUT
     grid-template-rows: repeat (6, 1fr);
     gap: 20px;
     padding: 80px 20px 0 20px;
+    margin-bottom: 80px;
     background-color: rgba(241, 214, 219, 0.25);
 }
 #about-me {
@@ -576,36 +587,43 @@ gap: 20px;
 background-color: #ffffff;
 padding: 20px;
 }
+#my-skills-body h2 {
+    grid-column: 3 / -3;
+    text-align: left;
+}
 #my-skills {
     grid-column: 3 / -3;
-    grid-row: 1 / -1;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
 }
-.ux-skill-image {
-    margin-right: 20px;
+.ux-skill {
+    align-items: top;
+    align-items: flex-start;
 }
-#my-skills h2 {
-    grid-column: 1 / -1;
-    grid-row: 1 / span 1;
-    text-align: left;
+.ux-skill div {
+    display: flex;
+    flex-direction: column;
+}
+.ux-skill-image {
+    object-fit: contain;
+    margin-right: 20px;
 }
 #ux-skill1, #ux-skill3 {
     display: flex;
     grid-column: 1 / 6;
 }
 #ux-skill1 {
-    grid-row: 2 / span 1;
+    grid-row: 1 / span 1;
 }
 #ux-skill2 {
     display: flex;
     grid-column: 4 / -1;
-    grid-row: 3 / span 1;
+    grid-row: 2 / span 1;
 }
 #ux-skill3 {
-    grid-row: 4 / span 1;
+    grid-row: 3 / span 1;
 }
 /* ABOUT : Tool Set */
 #tool-set-body {
@@ -613,6 +631,18 @@ padding: 20px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
     gap: 20px;
+}
+#tool-set-scroll {
+    display: none;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-left: 95.16px;
+}
+#tool-set-scroll::-webkit-scrollbar {
+    display: none;
+}
+#tool-set-scroll div {
+    margin-left: 0 !important;
 }
 #tool-set {
     grid-column: 3 / -3;
@@ -630,6 +660,7 @@ padding: 20px;
     justify-content: center;
 }
 .tool-tile {
+    display: inline-block;
     min-width: 216px;
     min-height: 216px;
     background-size: contain;
@@ -640,37 +671,37 @@ padding: 20px;
 #pen-paper {
     background-image: url(../images/pen-paper-tile.svg)
 }
-#pen-paper:hover {
+#pen-paper:hover, #pen-paper:active {
     background-image: url(../images/pen-paper-tile-hover.svg);
 }
 #figma {
     background-image: url(../images/figma-tile.svg);
 }
-#figma:hover {
+#figma:hover, #figma:active {
     background-image: url(../images/figma-tile-hover.svg);
 }
 #invision {
     background-image: url(../images/invision-tile.svg);
 }
-#invision:hover {
+#invision:hover, #invision:active {
     background-image: url(../images/invision-tile-hover.svg);
 }
 #miro {
     background-image: url(../images/miro-tile.svg);
 }
-#miro:hover {
+#miro:hover, #miro:active {
     background-image: url(../images/miro-tile-hover.svg);
 }
 #google-drive {
     background-image: url(../images/google-drive-tile.svg);
 }
-#google-drive:hover {
+#google-drive:hover, #google-drive:active {
     background-image: url(../images/google-drive-tile-hover.svg);
 }
 #photoshop {
     background-image: url(../images/photoshop-tile.svg);
 }
-#photoshop:hover {
+#photoshop:hover, #photoshop:active {
     background-image: url(../images/photoshop-tile-hover.svg);
 }
 /* =======================================
@@ -693,8 +724,8 @@ CASE STUDIES
 .wide-card {
 backdrop-filter: blur(20px);
 display: grid;
-grid-template-columns: repeat(12, 1fr);
-grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
 gap: 20px;
 padding: 40px 20px;
 }
@@ -730,7 +761,6 @@ grid-template-columns: repeat(12, 1fr);
 gap: 20px;
 flex-direction: column;
 align-items: center;
-/* margin-bottom: 20px; */
 overflow: hidden;
 min-height: 50vh;
 }
@@ -935,6 +965,7 @@ min-height: 50vh;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    overflow: visible;
 }
 .x2 img, .x3 img, .x1 img {
     width: 100%;
@@ -976,6 +1007,7 @@ min-height: 50vh;
     border-radius: 45px;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
+
 .final-toggle {
     margin-top: 20px;
     margin-bottom: 80px;
@@ -1041,11 +1073,6 @@ min-height: 50vh;
 .x2-2 {
     grid-column: 8 / span 3;
 }
-.x1-2 div, .x2-2 div {
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: space-between;
-}
 .demo-frame-1-2 {
     align-items: flex-end;
 }
@@ -1093,14 +1120,9 @@ min-height: 50vh;
 #other-study2 {
     grid-column: 7 / span 4;
 }
-.card-thumbnail {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    background-size: cover;
-}
 .wide-card-content {
-    grid-column: 1 / -1;
-    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
 }
 /* CASE STUDY 1/2/3 : Clickable images */
 .click-overlay {
@@ -1203,7 +1225,6 @@ min-height: 50vh;
     background: rgba(0,0,0,0.9);
     display: none;
     animation: 2s ease-in;
-    /* text-align: center; */
 }
 .full-wrap {
     display: flex;
@@ -1222,6 +1243,9 @@ min-height: 50vh;
 /* Responsive Breakpoints */
 
 @media only screen and (min-width: 1400px) {
+.wide-card {
+    grid-template-columns: repeat(12, 1fr);
+}
 .card-thumbnail {
     grid-column: 3 / 8;
     grid-row: 1 / -1;
@@ -1238,9 +1262,6 @@ min-height: 50vh;
     width: 16px;
     height: 16px;
 }
-/* .button {
-    display: inline;
-} */
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1251,25 +1272,25 @@ min-height: 50vh;
 .contact {
     width: 100%;
 }
-    .contact-method {
-        display: none;
-    }
+.contact-method {
+    display: none;
+}
 
-    #ux-skill1, #ux-skill3 {
-        display: flex;
-        grid-column: 1 / 7;
-    }
-    #ux-skill1 {
-        grid-row: 2 / span 1;
-    }
-    #ux-skill2 {
-        display: flex;
-        grid-column: 3 / -1;
-        grid-row: 3 / span 1;
-    }
-    #ux-skill3 {
-        grid-row: 4 / span 1;
-    }
+#ux-skill1, #ux-skill3 {
+    display: flex;
+    grid-column: 1 / 7;
+}
+#ux-skill1 {
+    grid-row: 2 / span 1;
+}
+#ux-skill2 {
+    display: flex;
+    grid-column: 3 / -1;
+    grid-row: 3 / span 1;
+}
+#ux-skill3 {
+    grid-row: 4 / span 1;
+}
 }
 
 @media only screen and (max-width: 800px) {
@@ -1350,17 +1371,18 @@ min-height: 50vh;
     margin: 0;
 }
 .wide-card {
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: 1fr 1fr;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .card-thumbnail {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    min-height: 200px;
     background-size: cover;
-}
-.wide-card-content {
-    grid-column: 1 / -1;
-    grid-row: 2 / -1;
+    background-position-x: center;
 }
 .ncard-thumbnail {
     background-size: cover;
@@ -1373,17 +1395,20 @@ grid-template-rows: 1fr 1fr;
     grid-column: 1 / -1;
 }
 #ux-skill1 {
-    grid-row: 2 / span 1;
+    grid-row: 1 / span 1;
 }
 #ux-skill2 {
-    grid-row: 3 / span 1;
+    grid-row: 2 / span 1;
 }
 #ux-skill3 {
-    grid-row: 4 / span 1;
+    grid-row: 3 / span 1;
 }
 .tool-row {
-    display: inline;
+    display: none;
     flex-direction: row;
+}
+#tool-set-scroll {
+    display: flex;
 }
 .other-studies {
     grid-template-columns: repeat(8, 1fr);
@@ -1398,11 +1423,11 @@ grid-template-rows: 1fr 1fr;
     grid-column: 5 / span 3;
 }
 /* Button Styles */
-#see-more {
+.see-more {
     display: block;
     align-self: center;
     box-sizing: border-box;
-    width: auto;
+    width: 100%;
 }
 #close-icon {
     position: fixed;
@@ -1413,9 +1438,9 @@ grid-template-rows: 1fr 1fr;
 footer {
     grid-template-columns: repeat(4, 1fr);
 }
-    .footer-content {
-        grid-column: 1 / -1;
-    }
+.footer-content {
+    grid-column: 1 / -1;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -1448,6 +1473,12 @@ footer {
     bottom: 20px;
     right: 0;
     margin: 0 20px;
+    z-index: 50;
+}
+/* Card Styles */
+.card-thumbnail {
+    grid-column: 1 / 2;
+    background-size: cover;
 }
 /* About Me */
 #about-me-body {
@@ -1457,6 +1488,10 @@ footer {
 }
 #about-me {
     grid-column: 1 / -1;
+}
+#about-me img:hover {
+    
+    animation: 2s ease;
 }
 /* Case Study Side Navigation */
 .side-case-menu {
@@ -1484,9 +1519,6 @@ footer {
 .side-tab {
     flex: 0 0 auto;
 }
-/* .side-tab img {
-    width: 32px;
-} */
 /* UX Skills */
 #my-skills-body {
     grid-template-columns: 1fr;
@@ -1494,14 +1526,15 @@ footer {
 }
 #my-skills {
     grid-column: 1 / -1;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 3fr 3fr 3fr;
+    display: flex;
+    flex-direction: column;
 }
-    #my-skills h2 {
-        text-align: center;
-    } */
+#my-skills h2 {
+    text-align: center;
+}
 .ux-skill {
     flex-direction: column;
+    grid-template: 1 / -1;
 }
 /* Tool set */
 #tool-set-body {
@@ -1512,10 +1545,8 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-column: 1 / -1;
 }
-/* #tool-set h2 {
-    text-align: center
-} */
 .tool-row {
+    display: none;
     grid-column: 1 / -1;
 }
 .tool-tile {
@@ -1575,8 +1606,6 @@ footer {
 .demo-frame-1-2, .demo-frame-2-2, .x1 div, .x1-2 div, .x2-2 div {
     text-align: center;
     align-items: center;
-    /* height: 500px;
-    width: auto; */
 }
 .demo-frame-1-2, .demo-frame-2-2 {
     margin-top: 40px;
@@ -1684,7 +1713,6 @@ footer {
     background: rgba(0,0,0,0.9);
     display: none;
     animation: 2s ease-in;
-    /* text-align: center; */
 }
 .overlay-center {
     position: relative;

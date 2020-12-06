@@ -161,10 +161,14 @@ $("#desktop-MichaelSearches").click(function() {
     console.log("MichaelSearches desktop");
     var image = $(".MichaelSearches");
     image.fadeOut(function() {
+        image.css({"min-height": "300px",})
         image.attr("src", "../images/Endangered/UI Interactions/desktop-search-bar-ui.gif").fadeIn();
         image.css({
             "box-shadow": "none",
             "width": "100%",
+            "min-height": "300px",
+            "border-radius": "0",
+            "object-fit": "contain",
         });
         image.fadeIn("fast");
     }).delay(300);
@@ -175,10 +179,13 @@ $("#mobile-MichaelSearches").click(function() {
     console.log("MichaelSearches mobile");
     var image = $(".MichaelSearches");
     image.fadeOut(function() {
+        image.css({"min-height": "600px",})
         image.attr("src", "../images/Endangered/UI Interactions/mobile v2 search.gif");
         image.css({
             "box-shadow": "0 0 10px rgba(0,0,0,0.25)",
             "width": "300px",
+            "border-radius": "45px",
+            "object-fit": "cover",
         });
         image.fadeIn("fast");
     }).delay(300);
@@ -191,10 +198,13 @@ $("#desktop-MichaelRefines").click(function() {
     console.log("MichaelRefines desktop");
     var image = $(".MichaelRefines");
     image.fadeOut(function() {
+        image.css({"min-height": "300px",})
         image.attr("src", "../images/Endangered/UI Interactions/desktop-filters-ui.gif");
         image.css({
             "box-shadow": "none",
             "width": "100%",
+            "border-radius": "0",
+            "object-fit": "contain",
         });
         image.fadeIn("fast");
     }).delay(300);
@@ -205,10 +215,13 @@ $("#mobile-MichaelRefines").click(function() {
     console.log("MichaelRefines mobile");
     var image = $(".MichaelRefines");
     image.fadeOut(function() {
+        image.css({"min-height": "600px",})
         image.attr("src", "../images/Endangered/UI Interactions/mobile v2 refine.gif");
         image.css({
             "box-shadow": "0 0 10px rgba(0,0,0,0.25)",
             "width": "300px",
+            "border-radius": "45px",
+            "object-fit": "cover",
         });
         image.fadeIn("fast");
     }).delay(300);
@@ -222,6 +235,7 @@ $("#desktop-Profile").click(function() {
     var image1 = $(".MichaelDownloads");
     var image2 = $(".MichaelSaves");
     $.merge(image1, image2).fadeOut(function() {
+        $.merge(image1, image2).css({"min-height": "300px",})
         image1.attr("src", "../images/Endangered/UI Interactions/desktop-download-ui.gif");
         image2.attr("src", "../images/Endangered/UI Interactions/desktop-save-ui.gif");
         if($(window).width() < 600) {
@@ -252,6 +266,7 @@ $("#mobile-Profile").click(function() {
     var image1 = $(".MichaelDownloads");
     var image2 = $(".MichaelSaves");
     $.merge(image1, image2).fadeOut(function() {
+        $.merge(image1, image2).css({"min-height": "600px",})
         image1.attr("src", "../images/Endangered/UI Interactions/mobile v2 download.gif");
         image2.attr("src", "../images/Endangered/UI Interactions/mobile v2 save.gif");
         if($(window).width() < 600) {
