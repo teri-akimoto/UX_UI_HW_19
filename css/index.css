@@ -281,6 +281,9 @@ HOME PAGE
     min-width: 100%;
     margin-bottom: 40px;
 }
+.wide-card-title {
+    padding-bottom: 20px;
+}
 .wide-card-content a {
     text-decoration: none;
 }
@@ -305,8 +308,8 @@ HOME PAGE
 #card-thumbnail3 {
     background-image: url(../images/Coral/CORAL-all-devices-cover.png);
 }
-.card-description {
-    padding-bottom: 40px;
+.card-heading {
+    margin-bottom: 0;
 }
 .card-heading span {
     font-style: italic;
@@ -455,13 +458,16 @@ h1, h2 {
     margin-block-start: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
 }
 h1 {
     font-size: 64px;
 }
 h2 {
     font-size: 36px;
+}
+.greeting {
+    margin-block-start: 0.83em;
 }
 h3 {
     margin-block-start: 0;
@@ -1045,10 +1051,12 @@ min-height: 50vh;
     grid-column: 1 / -3;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
     gap: 20px;
 }
     .case-p-mirror {
         grid-column: -1 / -4;
+        grid-row: 1 / -1;
     }
     .demo-frame-mirror {
         grid-column: 1 / -5;
@@ -1359,13 +1367,13 @@ min-height: 50vh;
 .hero {
     grid-template-columns: repeat(4, 1fr);
 }
-    .statement-section {
-        grid-column: 1 / -1;
-        grid-row: 2 / -1;
-    }
-    .greeting {
-        grid-column: 1 / -1;
-    }
+.statement-section {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+}
+.greeting {
+    grid-column: 1 / -1;
+}
 /* Card Styles */
 .wide-card-column {
     margin: 0;
@@ -1480,6 +1488,10 @@ footer {
     grid-column: 1 / 2;
     background-size: cover;
 }
+/* Styping */
+h3 {
+    margin-block-start: 1em;
+}
 /* About Me */
 #about-me-body {
     grid-template-columns: 1fr;
@@ -1498,7 +1510,7 @@ footer {
     position: fixed;
     width: 100%;
     min-height: 0;
-    top: 70px;
+    top: 69px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1521,7 +1533,8 @@ footer {
 }
 /* UX Skills */
 #my-skills-body {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 0 20px;
 }
 #my-skills {
@@ -1534,7 +1547,7 @@ footer {
 }
 .ux-skill {
     flex-direction: column;
-    grid-template: 1 / -1;
+    align-items: center;
 }
 /* Tool set */
 #tool-set-body {
@@ -1564,6 +1577,9 @@ footer {
 /* Case Study: Hero */
 .endangered-body {
     padding: 80px 0 0 0;
+}
+.endangered-body h1 {
+    margin-block-start: 0.67em;
 }
 .case-hero {
     grid-template-columns: repeat(4, 1fr);

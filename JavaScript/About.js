@@ -12,7 +12,7 @@ $("#summary-tab, #ux-skills-tab, #tool-set-tab").click(function(e) {
 // ------------------------------------------------------------------------------
 //Carousel ----------------------------------------------------------------------
 $(".side-menu").click(function() {
-    if($(window).width() < 500) {
+    if($(window).width() < 600) {
         if ($(".side-menu").height() > 20) {
             console.log("shrink!");
             $(this).animate({height: '20'}, 300);
