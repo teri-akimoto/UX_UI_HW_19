@@ -1,4 +1,22 @@
 // ------------------------------------------------------------------------------
+//Scroll Behaviour --------------------------------------------------------------
+$(document).on("scroll", function() {
+    var pageTop = $(document).scrollTop()
+    var pageBottom = pageTop + $(window).height()
+    var tags = $(".section")
+
+    for (var i = 0; i < tags.length; i++) {
+        var tag = tags[i]
+
+        if ($(tag).position().top < pageBottom) { 
+            $(tag).addClass("visible")
+        }
+        else { 
+            $(tag).removeClass("visible")
+        }
+    }
+})
+// ------------------------------------------------------------------------------
 //Carousel ----------------------------------------------------------------------
 $("#summary-tab, #ux-skills-tab, #tool-set-tab").click(function(e) {
     e.preventDefault();
